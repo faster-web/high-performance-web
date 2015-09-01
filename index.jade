@@ -1,0 +1,89 @@
+doctype html
+html(lang='en')
+	head
+		title High Performance Websites
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='shortcut icon', href='assets/img/favicons/favicon.ico')
+		link(rel='stylesheet', href='assets/css/main.css')
+	body
+		.page-home
+			section
+				h2.page-title
+					| High Performance Websites
+					br
+				h3.page-title
+					| A.K.A Faster Web
+				p Documentation for creating high-performing websites
+				//a.button.button-download(href='https://github.com/DevTips/DevTips-Starter-Kit/archive/master.zip') Download Now
+				//a.fork-tag(href='https://github.com/gemabuj') F**k Me on GitHub
+
+			section
+				article
+					h4 The Performance Golden Rule
+					include includes/golden-rules
+					a.fork-tag() The Performance Golden Rules
+
+			section
+				article
+					h4 Make Fewer HTTP Requests
+					include includes/fewer-http-request
+					a.fork-tag() Rule 1: Make Fewer HTTP Requests
+
+			section
+				article
+					h4 Use a Content Delivery Network
+					include includes/use-cdn
+					a.fork-tag() Rule 2: Use a Content Delivery Network
+
+			section
+				article
+					h4 Add an Expires Header
+					include includes/expires-headers
+					a.fork-tag() Rule 3: Add an Expires Headers
+
+			section
+				article
+					h4 Video: Steve Souders talks High Performance Websites
+					.flex-video-wrap
+						.flex-video
+							iframe(src='https://www.youtube.com/embed/arz3jhMfUx0', frameborder='0', allowfullscreen='')
+
+				article
+					p Compiled to you by
+					.name-lockup
+						img.avatar(src='')
+						.name
+							strong Writer Name
+							br
+							a(href='') @twitter
+			pre.
+				\n\t\t\tDevTips-Starter-Kit
+				\t\t\t| -- assets/
+				\t\t\t|   | -- css/
+				\t\t\t|   |   | -- 1-tools/
+				\t\t\t|   |   |   | -- bourbon/
+				\t\t\t|   |   |   | -- fonts.sass
+				\t\t\t|   |   |   | -- normalize.sass
+				\t\t\t|   |   |   | -- vars.sass
+				\t\t\t|   |   | -- 2-basics/
+				\t\t\t|   |   |   | -- body-elements.sass
+				\t\t\t|   |   |   | -- links.sass
+				\t\t\t|   |   |   | -- selection-colors.sass
+				\t\t\t|   |   |   | -- typography.sass
+				\t\t\t|   |   | -- 3-modules/
+				\t\t\t|   |   |   | -- example-module.sass
+				\t\t\t|   |   |   | -- example-module.sass
+				\t\t\t|   |   | -- 4-pages/
+				\t\t\t|   |   |   | -- example-page.sass
+				\t\t\t|   |   | -- main.sass
+				\t\t\t|   | -- js/
+				\t\t\t|   |   | -- jquery.js
+				\t\t\t|   |   | -- functions.js
+				\t\t\t|   | -- img/
+				\t\t\t| -- favicon.ico
+				\t\t\t| -- readme.md
+				\t\t\t| -- index.html
+				\t\t        
+		script(src='assets/js/jquery-2.1.4.min.js')
+		script(src='assets/js/functions.js', type='text/javascript')

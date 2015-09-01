@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>High Performance Websites</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <div class="page-home">
+      <section>
+        <h2 class="page-title">High Performance Websites<br></h2>
+        <h3 class="page-title">A.K.A Faster Web</h3>
+        <p>Documentation for creating high-performing websites</p>
+        <!--a.button.button-download(href='https://github.com/DevTips/DevTips-Starter-Kit/archive/master.zip') Download Now-->
+        <!--a.fork-tag(href='https://github.com/gemabuj') F**k Me on GitHub-->
+      </section>
+      <section>
+        <article>
+          <h4>The Performance Golden Rule</h4>
+          <p align="justify">Most of my web career has been spent as a backend engineer.As such, I dutifully approached each performance project as an exercise in backend optimization, concentrating on compiler options, database indexes, memory management, etc.There’s a lot of attention and many books devoted to optimizing performance in these areas, so that’s where most people spend time looking for improvements.In reality, for most web pages, less than 10–20% of the end user response time is spent getting the HTML document from the web server to the browser.</p>
+          <p align="justify">If you want to dramatically reduce the response times of your web pages, you have to focus on the other 80–90% of the end user experience.What is that 80–90% spent on? How can it be reduced? The chapters that follow lay the groundwork for understanding today’s web pages and provide 14 rules for making them faster.</p><a class="fork-tag">The Performance Golden Rules</a>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h4>Make Fewer HTTP Requests</h4>
+          <p align="justify">The Performance Golden Rule, as explained in Chapter A, reveals that only 10–20% of the end user response time involves retrieving the requested HTML document. The remaining 80–90% of the time is spent making HTTP requests for all the components (images, scripts, stylesheets, Flash, etc.) referenced in the HTML document. Thus, a simple way to improve response time is to reduce the number of components, and, in turn, reduce the number of HTTP requests.</p>
+          <p align="justify">Suggesting the idea of removing components from the page often creates tension between performance and product design.In this chapter, I describe techniques for eliminating HTTP requests while avoiding the difficult tradeoff decisions between performance and design.These techniques include using image maps, CSS sprites, inline images, and combined scripts and stylesheets.Using these techniques reduces response times of the example pages by as much as 50%.</p><a class="fork-tag">Rule 1: Make Fewer HTTP Requests</a>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h4>Use a Content Delivery Network</h4>
+          <p align="justify">The average user’s bandwidth increases every year, but a user’s proximity to your web server still has an impact on a page’s response time.Web startups often have all their servers in one location.If they survive the startup phase and build a larger audience, these companies face the reality that a single server location is no longer sufficient— it’s necessary to deploy content across multiple, geographically dispersed servers.</p>
+          <p align="justify">As a first step to implementing geographically dispersed content, don’t attempt to redesign your web application to work in a distributed architecture.Depending on the application, a redesign could include daunting tasks such as synchronizing session state and replicating database transactions across server locations.Attempts to reduce the distance between users and your content could be delayed by, or never pass, this redesign step.</p><a class="fork-tag">Rule 2: Use a Content Delivery Network</a>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h4>Add an Expires Header</h4>
+          <p align="justify">Fast response time is not your only consideration when designing web pages.If it were, then we’d all take Rule 1 to an extreme and place no images, scripts, or stylesheets in our pages.However, we all understand that images, scripts, and stylesheets can enhance the user experience, even if it means that the page will take longer to load.Rule 3, described in this chapter, shows how you can improve page performance by making sure these components are configured to maximize the browser’s caching capabilities.</p>
+          <p align="justify">Today’s web pages include many components and that number continues to grow.A first-time visitor to your page may have to make several HTTP requests, but by using a future Expires header, you make those components cacheable.This avoids unnecessary HTTP requests on subsequent page views.A future Expires header is most often used with images, but it should be used on all components, including scripts, stylesheets, and Flash.Most top web sites are not currently doing this.In this chapter, I point out these sites and show why their pages aren’t as fast as they could be. Adding a future Expires header incurs some additional development costs, as described in the section “Revving Filenames.”</p><a class="fork-tag">Rule 3: Add an Expires Headers</a>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h4>Video: Steve Souders talks High Performance Websites</h4>
+          <div class="flex-video-wrap">
+            <div class="flex-video">
+              <iframe src="https://www.youtube.com/embed/arz3jhMfUx0" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </article>
+        <article>
+          <p>Compiled to you by</p>
+          <div class="name-lockup"><img src="" class="avatar">
+            <div class="name"><strong>Writer Name</strong><br><a href="">@twitter</a></div>
+          </div>
+        </article>
+      </section>
+      <pre>\n\t\t\tDevTips-Starter-Kit
+\t\t\t| -- assets/
+\t\t\t|   | -- css/
+\t\t\t|   |   | -- 1-tools/
+\t\t\t|   |   |   | -- bourbon/
+\t\t\t|   |   |   | -- fonts.sass
+\t\t\t|   |   |   | -- normalize.sass
+\t\t\t|   |   |   | -- vars.sass
+\t\t\t|   |   | -- 2-basics/
+\t\t\t|   |   |   | -- body-elements.sass
+\t\t\t|   |   |   | -- links.sass
+\t\t\t|   |   |   | -- selection-colors.sass
+\t\t\t|   |   |   | -- typography.sass
+\t\t\t|   |   | -- 3-modules/
+\t\t\t|   |   |   | -- example-module.sass
+\t\t\t|   |   |   | -- example-module.sass
+\t\t\t|   |   | -- 4-pages/
+\t\t\t|   |   |   | -- example-page.sass
+\t\t\t|   |   | -- main.sass
+\t\t\t|   | -- js/
+\t\t\t|   |   | -- jquery.js
+\t\t\t|   |   | -- functions.js
+\t\t\t|   | -- img/
+\t\t\t| -- favicon.ico
+\t\t\t| -- readme.md
+\t\t\t| -- index.html
+\t\t        </pre>
+    </div>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/functions.js" type="text/javascript"></script>
+  </body>
+</html>
