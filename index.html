@@ -18,6 +18,16 @@
       </section>
       <section>
         <article>
+          <h4>Video: Steve Souders talks High Performance Websites</h4>
+          <div class="flex-video-wrap">
+            <div class="flex-video">
+              <iframe src="https://www.youtube.com/embed/arz3jhMfUx0" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article>
           <h4>The Performance Golden Rule</h4>
           <p align="justify">Most of my web career has been spent as a backend engineer.As such, I dutifully approached each performance project as an exercise in backend optimization, concentrating on compiler options, database indexes, memory management, etc.There’s a lot of attention and many books devoted to optimizing performance in these areas, so that’s where most people spend time looking for improvements.In reality, for most web pages, less than 10–20% of the end user response time is spent getting the HTML document from the web server to the browser.</p>
           <p align="justify">If you want to dramatically reduce the response times of your web pages, you have to focus on the other 80–90% of the end user experience.What is that 80–90% spent on? How can it be reduced? The chapters that follow lay the groundwork for understanding today’s web pages and provide 14 rules for making them faster.</p><a class="fork-tag">The Performance Golden Rules</a>
@@ -69,13 +79,11 @@
       </section>
       <section>
         <article>
-          <h4>Video: Steve Souders talks High Performance Websites</h4>
-          <div class="flex-video-wrap">
-            <div class="flex-video">
-              <iframe src="https://www.youtube.com/embed/arz3jhMfUx0" frameborder="0" allowfullscreen=""></iframe>
-            </div>
-          </div>
+          <h4>Avoid CSS Expressions</h4>
+          <p align="justify">Most browsers ignore the width property here because they don’t support CSS expressions and instead use the min-width property.Internet Explorer ignores the min-width property and instead sets the width property dynamically based on the width of the document.CSS expressions are re-evaluated when the page changes, such as when it is resized.This ensures that as the user resizes his browser, the width is adjusted appropriately.The frequency with which CSS expressions are evaluated is what makes them work, but it is also what makes CSS expressions bad for performance.</p><a class="fork-tag">Rule 7: Avoid CSS Expressions</a>
         </article>
+      </section>
+      <section>
         <article>
           <p>Compiled to you by</p>
           <div class="name-lockup"><img src="" class="avatar">
