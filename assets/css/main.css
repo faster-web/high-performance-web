@@ -327,7 +327,7 @@ input[type="button"] {
 .avatar {
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  border-radius: 2%;
   margin-right: 10px;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
